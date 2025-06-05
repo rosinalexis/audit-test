@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
-import questionnaire from '../data/questionsIndex';
+import { themes, methodologyMapping } from '../data/questionsIndex';
 import Question from './Question';
 import Breadcrumb from './Breadcrumb';
+import { useNavigate } from 'react-router-dom';
 
 const Questionnaire = () => {
+    const navigate = useNavigate();
     const [currentIndex, setCurrentIndex] = useState(0);
     const [answers, setAnswers] = useState(() => {
         const saved = localStorage.getItem('auditAnswers');
@@ -17,13 +19,6 @@ const Questionnaire = () => {
     // Base fixe de thèmes
     const baseOrder = ["projectInfo", "genericAudit"];
 
-    // Mapping méthodologie => thème spécifique
-    const methodologyMapping = {
-        "Agile": "agileAudit",
-        "Cycle en V": "vModelAudit",
-        "Kanban": "kanbanAudit",
-        "PRINCE2": "prince2Audit",
-    };
 
     // Construction dynamique de l'ordre des thèmes
     const selectedThemeOrder = methodValue && methodologyMapping[methodValue]
@@ -32,7 +27,7 @@ const Questionnaire = () => {
 
     // On récupère la liste des thèmes dans le bon ordre
     const orderedThemes = selectedThemeOrder
-        .map((id) => questionnaire.themes.find((t) => t.id === id))
+        .map((id) => themes.find((t) => t.id === id))
         .filter(Boolean);
 
     const currentTheme = orderedThemes[currentIndex];
@@ -49,6 +44,20 @@ const Questionnaire = () => {
                 [questionId]: { value, points },
             },
         }));
+    };
+
+    const handleSubmit = () => {
+        const completedAnswers = {
+            ...answers,
+            completed: true,
+        };
+
+        navigate('/recap', {
+            state: {
+                answers: completedAnswers,
+                themes: themes,
+            },
+        });
     };
 
     return (
@@ -89,7 +98,7 @@ const Questionnaire = () => {
                 ) : (
                     <button
                         type="button"
-                        onClick={() => alert('Audit terminé ! Réponses :\n' + JSON.stringify(answers, null, 2))}
+                        onClick={handleSubmit}
                     >
                         Valider
                     </button>

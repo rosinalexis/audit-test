@@ -23,4 +23,15 @@ const themes = [
     prince2Audit
 ];
 
-export default { themeOrder, themes };
+const methodologyMapping = {
+    "Agile": "agileAudit",
+    "Cycle en V": "vModelAudit",
+    "Kanban": "kanbanAudit",
+    "PRINCE2": "prince2Audit",
+};
+
+export {
+    themeOrder,
+    themes,
+    methodologyMapping
+};

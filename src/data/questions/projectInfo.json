@@ -1,0 +1,22 @@
+{
+    "id": "projectInfo",
+    "title": "Informations sur le projet",
+    "questions": [
+        {
+            "id": "projectName",
+            "type": "text",
+            "label": "Nom du projet"
+        },
+        {
+            "id": "methodology",
+            "type": "select",
+            "label": "Méthodologie utilisée",
+            "options": [
+                "Agile",
+                "Cycle en V",
+                "Kanban",
+                "PRINCE2"
+            ]
+        }
+    ]
+}

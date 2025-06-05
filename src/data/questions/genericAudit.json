@@ -1,0 +1,39 @@
+{
+    "id": "genericAudit",
+    "title": "Audit générique",
+    "questions": [
+        {
+            "id": "objectivesDefined",
+            "type": "radio",
+            "points": 2,
+            "label": "Les objectifs du projet sont-ils clairement définis ?",
+            "options": [
+                "Oui",
+                "Partiellement",
+                "Non"
+            ]
+        },
+        {
+            "id": "stakeholdersIdentified",
+            "type": "radio",
+            "points": 2,
+            "label": "Les parties prenantes sont-elles identifiées ?",
+            "options": [
+                "Oui",
+                "Partiellement",
+                "Non"
+            ]
+        },
+        {
+            "id": "riskLevel",
+            "type": "radio",
+            "points": 1,
+            "label": "Quel est le niveau de risque du projet ?",
+            "options": [
+                "Faible",
+                "Modéré",
+                "Élevé"
+            ]
+        }
+    ]
+}

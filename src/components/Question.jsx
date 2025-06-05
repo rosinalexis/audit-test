@@ -1,4 +1,3 @@
-
 const Question = ({ question, value, onChange }) => {
     const handleChange = (e) => {
         onChange(question.id, e.target.value, question.points);

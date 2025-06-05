@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import questionnaire from '../data/questions.json';
+import questionnaire from '../data/questionsIndex';
 import Question from './Question';
 import Breadcrumb from './Breadcrumb';
 

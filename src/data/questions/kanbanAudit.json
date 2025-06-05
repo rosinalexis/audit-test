@@ -1,0 +1,28 @@
+{
+    "id": "kanbanAudit",
+    "title": "Audit spécifique à la méthodologie Kanban",
+    "questions": [
+        {
+            "id": "workflowVisible",
+            "type": "select",
+            "points": 2,
+            "label": "Le flux de travail est-il visible à tous ?",
+            "options": [
+                "Oui",
+                "Partiellement",
+                "Non"
+            ]
+        },
+        {
+            "id": "wipLimited",
+            "type": "select",
+            "points": 2,
+            "label": "Les limites WIP sont-elles définies et respectées ?",
+            "options": [
+                "Oui",
+                "Partiellement",
+                "Non"
+            ]
+        }
+    ]
+}

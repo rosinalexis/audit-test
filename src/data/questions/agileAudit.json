@@ -1,0 +1,28 @@
+{
+    "id": "agileAudit",
+    "title": "Audit spécifique à la méthodologie Agile",
+    "questions": [
+        {
+            "id": "scrumRoles",
+            "type": "select",
+            "points": 2,
+            "label": "Les rôles Scrum (PO, SM, équipe) sont-ils bien définis ?",
+            "options": [
+                "Oui",
+                "Partiellement",
+                "Non"
+            ]
+        },
+        {
+            "id": "sprintsDefined",
+            "type": "radio",
+            "points": 2,
+            "label": "Les sprints sont-ils bien planifiés et suivis ?",
+            "options": [
+                "Oui",
+                "Partiellement",
+                "Non"
+            ]
+        }
+    ]
+}

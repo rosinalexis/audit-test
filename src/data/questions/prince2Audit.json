@@ -4,6 +4,7 @@
     "questions": [
         {
             "id": "businessCaseMaintained",
+            "order": 1,
             "type": "select",
             "label": "Un Business Case est-il maintenu à jour ?",
             "weight": 2,
@@ -21,6 +22,7 @@
         },
         {
             "id": "rolesAndResponsibilities",
+            "order": 2,
             "type": "radio",
             "label": "Les rôles et responsabilités sont-ils bien définis ?",
             "weight": 2,

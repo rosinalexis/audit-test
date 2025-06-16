@@ -4,6 +4,7 @@
     "questions": [
         {
             "id": "scrumRoles",
+            "order": 2,
             "type": "radio",
             "label": "Les rôles Scrum (PO, SM, équipe) sont-ils bien définis ?",
             "weight": 2,
@@ -21,6 +22,7 @@
         },
         {
             "id": "sprintsDefined",
+            "order": 1,
             "type": "radio",
             "label": "Les sprints sont-ils bien planifiés et suivis ?",
             "weight": 2,

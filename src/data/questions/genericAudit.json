@@ -4,6 +4,7 @@
     "questions": [
         {
             "id": "objectivesDefined",
+            "order": 2,
             "type": "radio",
             "label": "Les objectifs du projet sont-ils clairement définis ?",
             "weight": 2,
@@ -21,6 +22,7 @@
         },
         {
             "id": "stakeholdersIdentified",
+            "order": 0,
             "type": "radio",
             "label": "Les parties prenantes sont-elles identifiées ?",
             "weight": 2,
@@ -38,6 +40,7 @@
         },
         {
             "id": "riskLevel",
+            "order": 3,
             "type": "radio",
             "label": "Quel est le niveau de risque du projet ?",
             "weight": 1,

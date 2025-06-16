@@ -4,11 +4,13 @@
     "questions": [
         {
             "id": "projectName",
+            "order": 0,
             "type": "text",
             "label": "Nom du projet"
         },
         {
             "id": "methodology",
+            "order": 1,
             "type": "select",
             "label": "Méthodologie utilisée",
             "options": [

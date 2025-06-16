@@ -63,14 +63,17 @@ const Questionnaire = () => {
 
             <h2>{currentTheme.title}</h2>
             <form>
-                {currentTheme.questions.map((q) => (
-                    <Question
-                        key={q.id}
-                        question={q}
-                        value={answers[currentTheme.id]?.[q.id]?.value || ''}
-                        onChange={handleAnswerChange}
-                    />
-                ))}
+                {currentTheme.questions
+                    .slice()
+                    .sort((a, b) => (a.order || 0) - (b.order || 0))
+                    .map((q) => (
+                        <Question
+                            key={q.id}
+                            question={q}
+                            value={answers[currentTheme.id]?.[q.id]?.value || ''}
+                            onChange={handleAnswerChange}
+                        />
+                    ))}
             </form>
 
             <footer style={{ marginTop: '2rem', display: 'flex', justifyContent: 'space-between' }}>

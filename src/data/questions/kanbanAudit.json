@@ -4,6 +4,7 @@
     "questions": [
         {
             "id": "workflowVisible",
+            "order": 2,
             "type": "select",
             "label": "Le flux de travail est-il visible à tous ?",
             "weight": 2,
@@ -21,6 +22,7 @@
         },
         {
             "id": "wipLimited",
+            "order": 1,
             "type": "select",
             "label": "Les limites WIP sont-elles définies et respectées ?",
             "weight": 2,

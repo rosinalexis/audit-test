@@ -5,23 +5,35 @@
         {
             "id": "businessCaseMaintained",
             "type": "select",
-            "points": 2,
             "label": "Un Business Case est-il maintenu à jour ?",
+            "weight": 2,
             "options": [
                 "Oui",
                 "Partiellement",
                 "Non"
+            ],
+            "scoringType": "direct",
+            "scoringWeights": [
+                2,
+                1,
+                0
             ]
         },
         {
             "id": "rolesAndResponsibilities",
             "type": "radio",
-            "points": 2,
             "label": "Les rôles et responsabilités sont-ils bien définis ?",
+            "weight": 2,
             "options": [
                 "Oui",
                 "Partiellement",
                 "Non"
+            ],
+            "scoringType": "direct",
+            "scoringWeights": [
+                2,
+                1,
+                0
             ]
         }
     ]

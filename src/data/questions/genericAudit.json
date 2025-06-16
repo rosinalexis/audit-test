@@ -5,34 +5,52 @@
         {
             "id": "objectivesDefined",
             "type": "radio",
-            "points": 2,
             "label": "Les objectifs du projet sont-ils clairement définis ?",
+            "weight": 2,
             "options": [
                 "Oui",
                 "Partiellement",
                 "Non"
+            ],
+            "scoringType": "direct",
+            "scoringWeights": [
+                2,
+                1,
+                0
             ]
         },
         {
             "id": "stakeholdersIdentified",
             "type": "radio",
-            "points": 2,
             "label": "Les parties prenantes sont-elles identifiées ?",
+            "weight": 2,
             "options": [
                 "Oui",
                 "Partiellement",
                 "Non"
+            ],
+            "scoringType": "direct",
+            "scoringWeights": [
+                2,
+                1,
+                0
             ]
         },
         {
             "id": "riskLevel",
             "type": "radio",
-            "points": 1,
             "label": "Quel est le niveau de risque du projet ?",
+            "weight": 1,
             "options": [
                 "Faible",
                 "Modéré",
                 "Élevé"
+            ],
+            "scoringType": "indirect",
+            "scoringWeights": [
+                2,
+                1,
+                0
             ]
         }
     ]

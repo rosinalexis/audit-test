@@ -12,20 +12,13 @@ const Questionnaire = () => {
         return saved ? JSON.parse(saved) : {};
     });
 
-    // Récupérer la méthodologie sélectionnée 
     const methodology = answers.projectInfo?.methodology;
     const methodValue = methodology?.value || "";
-
-    // Base fixe de thèmes
     const baseOrder = ["projectInfo", "genericAudit"];
-
-
-    // Construction dynamique de l'ordre des thèmes
     const selectedThemeOrder = methodValue && methodologyMapping[methodValue]
         ? [...baseOrder, methodologyMapping[methodValue]]
         : [...baseOrder];
 
-    // On récupère la liste des thèmes dans le bon ordre
     const orderedThemes = selectedThemeOrder
         .map((id) => themes.find((t) => t.id === id))
         .filter(Boolean);
@@ -36,12 +29,12 @@ const Questionnaire = () => {
         localStorage.setItem('auditAnswers', JSON.stringify(answers));
     }, [answers]);
 
-    const handleAnswerChange = (questionId, value, points) => {
+    const handleAnswerChange = (questionId, value, { score, weight }) => {
         setAnswers((prev) => ({
             ...prev,
             [currentTheme.id]: {
                 ...prev[currentTheme.id],
-                [questionId]: { value, points },
+                [questionId]: { value, score, weight },
             },
         }));
     };
@@ -62,7 +55,6 @@ const Questionnaire = () => {
 
     return (
         <main className="container">
-            {/* Fil d'Ariane */}
             <Breadcrumb
                 themes={orderedThemes}
                 currentIndex={currentIndex}
@@ -89,21 +81,27 @@ const Questionnaire = () => {
                 )}
 
                 {currentIndex < orderedThemes.length - 1 ? (
-                    <button
-                        type="button"
-                        onClick={() => setCurrentIndex(i => i + 1)}
-                    >
+                    <button type="button" onClick={() => setCurrentIndex(i => i + 1)}>
                         Suivant &rarr;
                     </button>
                 ) : (
-                    <button
-                        type="button"
-                        onClick={handleSubmit}
-                    >
+                    <button type="button" onClick={handleSubmit}>
                         Valider
                     </button>
                 )}
             </footer>
+
+            <div style={{ marginTop: '1rem', textAlign: 'center' }}>
+                <button
+                    onClick={() => {
+                        localStorage.removeItem('auditAnswers');
+                        window.location.reload();
+                    }}
+                    style={{ background: 'none', border: 'none', color: '#888', textDecoration: 'underline', cursor: 'pointer' }}
+                >
+                    Réinitialiser le questionnaire
+                </button>
+            </div>
         </main>
     );
 };

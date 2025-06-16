@@ -1,4 +1,3 @@
-// src/pages/RecapPage.jsx
 import { useLocation, Link } from 'react-router-dom';
 import { methodologyMapping } from '../data/questionsIndex';
 
@@ -11,20 +10,15 @@ const RecapPage = () => {
     }
 
     const methodologyValue = answers.projectInfo?.methodology?.value || answers.projectInfo?.methodology;
-
     const themeOrder = ["projectInfo", "genericAudit"];
-
     const selectedMethodologyId = methodologyMapping[methodologyValue];
     if (selectedMethodologyId) themeOrder.push(selectedMethodologyId);
 
     const calculateScore = (themeId) => {
-        const theme = themes.find(t => t.id === themeId);
-        if (!theme || !theme.questions) return 0;
+        const themeAnswers = answers[themeId];
+        if (!themeAnswers) return 0;
 
-        return theme.questions.reduce((sum, q) => {
-            const answer = answers[themeId]?.[q.id];
-            return answer && q.points ? sum + q.points : sum;
-        }, 0);
+        return Object.values(themeAnswers).reduce((sum, a) => sum + (a.score || 0), 0);
     };
 
     return (

@@ -4,24 +4,36 @@
     "questions": [
         {
             "id": "scrumRoles",
-            "type": "select",
-            "points": 2,
+            "type": "radio",
             "label": "Les rôles Scrum (PO, SM, équipe) sont-ils bien définis ?",
+            "weight": 2,
             "options": [
                 "Oui",
                 "Partiellement",
                 "Non"
+            ],
+            "scoringType": "direct",
+            "scoringWeights": [
+                2,
+                1,
+                0
             ]
         },
         {
             "id": "sprintsDefined",
             "type": "radio",
-            "points": 2,
             "label": "Les sprints sont-ils bien planifiés et suivis ?",
+            "weight": 2,
             "options": [
                 "Oui",
                 "Partiellement",
                 "Non"
+            ],
+            "scoringType": "direct",
+            "scoringWeights": [
+                2,
+                1,
+                0
             ]
         }
     ]

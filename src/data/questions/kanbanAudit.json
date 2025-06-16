@@ -5,23 +5,35 @@
         {
             "id": "workflowVisible",
             "type": "select",
-            "points": 2,
             "label": "Le flux de travail est-il visible à tous ?",
+            "weight": 2,
             "options": [
                 "Oui",
                 "Partiellement",
                 "Non"
+            ],
+            "scoringType": "direct",
+            "scoringWeights": [
+                2,
+                1,
+                0
             ]
         },
         {
             "id": "wipLimited",
             "type": "select",
-            "points": 2,
             "label": "Les limites WIP sont-elles définies et respectées ?",
+            "weight": 2,
             "options": [
                 "Oui",
                 "Partiellement",
                 "Non"
+            ],
+            "scoringType": "direct",
+            "scoringWeights": [
+                2,
+                1,
+                0
             ]
         }
     ]

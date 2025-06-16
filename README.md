@@ -9,6 +9,7 @@ Ce projet utilise un format JSON structuré pour représenter les questions d'au
 ```json
 {
   "id": "scrumRoles",
+  "order": 1,
   "type": "select",
   "weight": 2,
   "label": "Les rôles Scrum (PO, SM, équipe) sont-ils bien définis ?",
@@ -25,6 +26,7 @@ Ce projet utilise un format JSON structuré pour représenter les questions d'au
 | Clé              | Type       | Description                                                                      |
 | ---------------- | ---------- | -------------------------------------------------------------------------------- |
 | `id`             | `string`   | Identifiant unique de la question.                                               |
+| `order`          | `number`   | Ordre d’affichage dans le formulaire                                             |
 | `type`           | `string`   | Type de champ (`text`, `select`, `radio`, etc.).                                 |
 | `label`          | `string`   | Texte affiché à l’utilisateur.                                                   |
 | `options`        | `string[]` | Liste des réponses possibles (requis pour `select` et `radio`).                  |
@@ -32,7 +34,7 @@ Ce projet utilise un format JSON structuré pour représenter les questions d'au
 | `scoringType`    | `string`   | Méthode de calcul. Valeurs possibles : `"direct"` ou `"indirect"`.               |
 | `scoringWeights` | `number[]` | Liste des scores associés aux options. L’ordre correspond à celui des `options`. |
 
----
+## order number Ordre d’affichage dans le formulaire
 
 ## 🎯 Types de scoring
 
@@ -63,6 +65,7 @@ Si une question a :
   "questions": [
     {
       "id": "scrumRoles",
+      "order": 1,
       "type": "select",
       "weight": 2,
       "label": "Les rôles Scrum (PO, SM, équipe) sont-ils bien définis ?",
@@ -72,6 +75,7 @@ Si une question a :
     },
     {
       "id": "sprintsDefined",
+      "order": 2,
       "type": "radio",
       "weight": 1,
       "label": "Les sprints sont-ils bien planifiés et suivis ?",

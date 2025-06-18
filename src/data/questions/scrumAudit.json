@@ -1,0 +1,424 @@
+{
+  "id": "scrumAudit",
+  "title": "Audit Scrum",
+  "questions": [
+    {
+      "id": "q1_scrum",
+      "order": "1b",
+      "type": "radio",
+      "label": "L'équipe est-elle auto-organisée ?",
+      "weight": 4,
+      "category": "Organisation",
+      "options": [
+        "Oui",
+        "Partiellement",
+        "Non"
+      ],
+      "scoringType": "direct",
+      "scoringWeights": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q2_scrum",
+      "order": "1c",
+      "type": "radio",
+      "label": "Les compétences de l'équipe sont-elles présentes pour atteindre l'objectif produit ?",
+      "weight": 5,
+      "category": "Organisation",
+      "options": [
+        "Oui",
+        "Partiellement",
+        "Non"
+      ],
+      "scoringType": "direct",
+      "scoringWeights": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q3_scrum",
+      "order": "1d",
+      "type": "radio",
+      "label": "Le Scrum Master est-il garant de la bonne application du framework Scrum ?",
+      "weight": 5,
+      "category": "Organisation",
+      "options": [
+        "Oui",
+        "Partiellement",
+        "Non"
+      ],
+      "scoringType": "direct",
+      "scoringWeights": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q4_scrum",
+      "order": "1e",
+      "type": "radio",
+      "label": "Le Scrum Master joute-t-il pleinement son rôle en enlevant les obstacles rencontrés par l'équipe ?",
+      "weight": 5,
+      "category": "Organisation",
+      "options": [
+        "Oui",
+        "Partiellement",
+        "Non"
+      ],
+      "scoringType": "direct",
+      "scoringWeights": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q5_scrum",
+      "order": "1f",
+      "type": "radio",
+      "label": "Le Product Owner est-il garant de maximiser la valeur du produit ?",
+      "weight": 5,
+      "category": "Organisation",
+      "options": [
+        "Oui",
+        "Partiellement",
+        "Non"
+      ],
+      "scoringType": "direct",
+      "scoringWeights": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q6_scrum",
+      "order": "1g",
+      "type": "radio",
+      "label": "Les Développeurs veillent-ils à produire un travail de qualité à chaque sprint ?",
+      "weight": 5,
+      "category": "Organisation",
+      "options": [
+        "Oui",
+        "Partiellement",
+        "Non"
+      ],
+      "scoringType": "direct",
+      "scoringWeights": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q7_scrum",
+      "order": "2b",
+      "type": "radio",
+      "label": "Une démonstration est-elles réalisée à chaque sprint auprès des parties prenantes ?",
+      "weight": 5,
+      "category": "Organisation",
+      "options": [
+        "Oui",
+        "Partiellement",
+        "Non"
+      ],
+      "scoringType": "direct",
+      "scoringWeights": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q8_scrum",
+      "order": "2c",
+      "type": "radio",
+      "label": "Les feedbacks remontés lors de la Sprint review sont-ils pris en compte par l'équipe ?",
+      "weight": 5,
+      "category": "Organisation",
+      "options": [
+        "Oui",
+        "Partiellement",
+        "Non"
+      ],
+      "scoringType": "direct",
+      "scoringWeights": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q9_scrum",
+      "order": "2d",
+      "type": "radio",
+      "label": "Les décisions sont-elles prises rapidement ?",
+      "weight": 4,
+      "category": "Organisation",
+      "options": [
+        "Oui",
+        "Partiellement",
+        "Non"
+      ],
+      "scoringType": "direct",
+      "scoringWeights": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q10_scrum",
+      "order": "2e",
+      "type": "radio",
+      "label": "La durée et fréquence des Scrum Daily Meeting sont-elles respectées ?",
+      "weight": 4,
+      "category": "Organisation",
+      "options": [
+        "Oui",
+        "Partiellement",
+        "Non"
+      ],
+      "scoringType": "direct",
+      "scoringWeights": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q11_scrum",
+      "order": "2f",
+      "type": "radio",
+      "label": "Les rétrospectives donnent-elles lieu à des actions concrètes d'amélioration ?",
+      "weight": 5,
+      "category": "Organisation",
+      "options": [
+        "Oui",
+        "Partiellement",
+        "Non"
+      ],
+      "scoringType": "direct",
+      "scoringWeights": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q12_scrum",
+      "order": "4b",
+      "type": "radio",
+      "label": "Un objectif de sprint porteur de valeur est-il défini à l'issue du Sprint Planning ?",
+      "weight": 5,
+      "category": "Planification et Ressources",
+      "options": [
+        "Oui",
+        "Partiellement",
+        "Non"
+      ],
+      "scoringType": "direct",
+      "scoringWeights": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q13_scrum",
+      "order": "4c",
+      "type": "radio",
+      "label": "L'objectif du sprint est-il régulièrement atteint ?",
+      "weight": 5,
+      "category": "Objectifs et Périmètre",
+      "options": [
+        "Oui",
+        "Partiellement",
+        "Non"
+      ],
+      "scoringType": "direct",
+      "scoringWeights": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q14_scrum",
+      "order": "4d",
+      "type": "radio",
+      "label": "L'équipe utilise-t-elle un outil pour suivre l'avancement des tâche et favoriser la transparence (Jira, autre...) ?",
+      "weight": 4,
+      "category": "Outils et Documentation",
+      "options": [
+        "Oui",
+        "Partiellement",
+        "Non"
+      ],
+      "scoringType": "direct",
+      "scoringWeights": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q15_scrum",
+      "order": "4e",
+      "type": "radio",
+      "label": "Le product backlog est-il mis à jour régulièrement et priorisé ?",
+      "weight": 5,
+      "category": "Objectifs et Périmètre",
+      "options": [
+        "Oui",
+        "Partiellement",
+        "Non"
+      ],
+      "scoringType": "direct",
+      "scoringWeights": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q16_scrum",
+      "order": "4f",
+      "type": "radio",
+      "label": "Les User Stories sont-elles affinées, revues et comprises par l'équipe ?",
+      "weight": 5,
+      "category": "Objectifs et Périmètre",
+      "options": [
+        "Oui",
+        "Partiellement",
+        "Non"
+      ],
+      "scoringType": "direct",
+      "scoringWeights": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q17_scrum",
+      "order": "4g",
+      "type": "radio",
+      "label": "Le sprint backlog reflète-t-il l'état d'avancement réel vers l'objectif du sprint ?",
+      "weight": 5,
+      "category": "Objectifs et Périmètre",
+      "options": [
+        "Oui",
+        "Partiellement",
+        "Non"
+      ],
+      "scoringType": "direct",
+      "scoringWeights": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q18_scrum",
+      "order": "4h",
+      "type": "radio",
+      "label": "Les membres de l'équipe se conforment-t-il à la définition de terminé (DoD) avant de mettre une US comme \"Terminé\" ?",
+      "weight": 5,
+      "category": "Planification et Ressources",
+      "options": [
+        "Oui",
+        "Partiellement",
+        "Non"
+      ],
+      "scoringType": "direct",
+      "scoringWeights": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q19_scrum",
+      "order": "4i",
+      "type": "radio",
+      "label": "Les tests sont-ils automatisés ?",
+      "weight": 4,
+      "category": "Outils et Documentation",
+      "options": [
+        "Oui",
+        "Partiellement",
+        "Non"
+      ],
+      "scoringType": "direct",
+      "scoringWeights": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q20_scrum",
+      "order": "4j",
+      "type": "radio",
+      "label": "Est-ce qu'un pipeline d'intégration continue est mise en place?",
+      "weight": 3,
+      "category": "Outils et Documentation",
+      "options": [
+        "Oui",
+        "Partiellement",
+        "Non"
+      ],
+      "scoringType": "direct",
+      "scoringWeights": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q21_scrum",
+      "order": "10b",
+      "type": "radio",
+      "label": "L'équipe est-elle capable de livrer de façon prédictible ?",
+      "weight": 4,
+      "category": "Planification et Ressources",
+      "options": [
+        "Oui",
+        "Partiellement",
+        "Non"
+      ],
+      "scoringType": "direct",
+      "scoringWeights": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q22_scrum",
+      "order": "13b",
+      "type": "radio",
+      "label": "Les membres de l’équipe sont-ils motivés ?",
+      "weight": 5,
+      "category": "Organisation",
+      "options": [
+        "Oui",
+        "Partiellement",
+        "Non"
+      ],
+      "scoringType": "direct",
+      "scoringWeights": [
+        2,
+        1,
+        0
+      ]
+    }
+  ]
+}

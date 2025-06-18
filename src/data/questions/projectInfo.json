@@ -14,10 +14,7 @@
             "type": "select",
             "label": "Méthodologie utilisée",
             "options": [
-                "Agile",
-                "Cycle en V",
-                "Kanban",
-                "PRINCE2"
+                "Scrum"
             ]
         }
     ]

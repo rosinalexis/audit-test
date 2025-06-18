@@ -6,7 +6,8 @@ const Question = ({ question, value, onChange }) => {
         const score = computeScore(question, selectedValue);
         onChange(question.id, selectedValue, {
             score,
-            weight: question.weight
+            weight: question.weight,
+            category: question.category
         });
     };
 

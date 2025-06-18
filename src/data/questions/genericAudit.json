@@ -3,11 +3,12 @@
     "title": "Audit générique",
     "questions": [
         {
-            "id": "objectivesDefined",
-            "order": 2,
+            "id": "q1_gen",
+            "order": "1a",
             "type": "radio",
-            "label": "Les objectifs du projet sont-ils clairement définis ?",
-            "weight": 2,
+            "label": "Les rôles et responsabilités sont-ils formalisés ?",
+            "weight": 3,
+            "category": "Organisation",
             "options": [
                 "Oui",
                 "Partiellement",
@@ -21,11 +22,12 @@
             ]
         },
         {
-            "id": "stakeholdersIdentified",
-            "order": 0,
+            "id": "q2_gen",
+            "order": "2a",
             "type": "radio",
-            "label": "Les parties prenantes sont-elles identifiées ?",
-            "weight": 2,
+            "label": "Les parties prenantes sont-elles identifiées et impliquées ?",
+            "weight": 3,
+            "category": "Organisation",
             "options": [
                 "Oui",
                 "Partiellement",
@@ -39,17 +41,208 @@
             ]
         },
         {
-            "id": "riskLevel",
-            "order": 3,
+            "id": "q3_gen",
+            "order": "3a",
             "type": "radio",
-            "label": "Quel est le niveau de risque du projet ?",
-            "weight": 1,
+            "label": "Le périmètre du projet est-il clairement défini ?",
+            "weight": 5,
+            "category": "Objectifs et Périmètre",
             "options": [
-                "Faible",
-                "Modéré",
-                "Élevé"
+                "Oui",
+                "Partiellement",
+                "Non"
             ],
-            "scoringType": "indirect",
+            "scoringType": "direct",
+            "scoringWeights": [
+                2,
+                1,
+                0
+            ]
+        },
+        {
+            "id": "q4_gen",
+            "order": "4a",
+            "type": "radio",
+            "label": "Les objectifs du projet sont-ils alignés avec les besoins métier ?",
+            "weight": 5,
+            "category": "Objectifs et Périmètre",
+            "options": [
+                "Oui",
+                "Partiellement",
+                "Non"
+            ],
+            "scoringType": "direct",
+            "scoringWeights": [
+                2,
+                1,
+                0
+            ]
+        },
+        {
+            "id": "q5_gen",
+            "order": "5a",
+            "type": "radio",
+            "label": "Le client est-il satisfait de l’avancement ?",
+            "weight": 4,
+            "category": "Objectifs et Périmètre",
+            "options": [
+                "Oui",
+                "Partiellement",
+                "Non"
+            ],
+            "scoringType": "direct",
+            "scoringWeights": [
+                2,
+                1,
+                0
+            ]
+        },
+        {
+            "id": "q6_gen",
+            "order": "6a",
+            "type": "radio",
+            "label": "Le budget est-il maîtrisé à date ?",
+            "weight": 5,
+            "category": "Planification et Ressources",
+            "options": [
+                "Oui",
+                "Partiellement",
+                "Non"
+            ],
+            "scoringType": "direct",
+            "scoringWeights": [
+                2,
+                1,
+                0
+            ]
+        },
+        {
+            "id": "q7_gen",
+            "order": "7a",
+            "type": "radio",
+            "label": "L’équipe dispose des compétences nécessaires ?",
+            "weight": 3,
+            "category": "Planification et Ressources",
+            "options": [
+                "Oui",
+                "Partiellement",
+                "Non"
+            ],
+            "scoringType": "direct",
+            "scoringWeights": [
+                2,
+                1,
+                0
+            ]
+        },
+        {
+            "id": "q8_gen",
+            "order": "8a",
+            "type": "radio",
+            "label": "Les décisions critiques sont-elles prises rapidement ?",
+            "weight": 3,
+            "category": "Suivi, Risques et Changements",
+            "options": [
+                "Oui",
+                "Partiellement",
+                "Non"
+            ],
+            "scoringType": "direct",
+            "scoringWeights": [
+                2,
+                1,
+                0
+            ]
+        },
+        {
+            "id": "q9_gen",
+            "order": "9a",
+            "type": "radio",
+            "label": "Les risques sont-ils identifiés et suivis ?",
+            "weight": 3,
+            "category": "Suivi, Risques et Changements",
+            "options": [
+                "Oui",
+                "Partiellement",
+                "Non"
+            ],
+            "scoringType": "direct",
+            "scoringWeights": [
+                2,
+                1,
+                0
+            ]
+        },
+        {
+            "id": "q10_gen",
+            "order": "10a",
+            "type": "radio",
+            "label": "Des indicateurs de performance sont-ils utilisés ?",
+            "weight": 3,
+            "category": "Outils et Documentation",
+            "options": [
+                "Oui",
+                "Partiellement",
+                "Non"
+            ],
+            "scoringType": "direct",
+            "scoringWeights": [
+                2,
+                1,
+                0
+            ]
+        },
+        {
+            "id": "q11_gen",
+            "order": "11a",
+            "type": "radio",
+            "label": "Des alertes ou dérives ont-elles été remontées récemment ?",
+            "weight": 2,
+            "category": "Outils et Documentation",
+            "options": [
+                "Oui",
+                "Partiellement",
+                "Non"
+            ],
+            "scoringType": "inverse",
+            "scoringWeights": [
+                0,
+                1,
+                2
+            ]
+        },
+        {
+            "id": "q12_gen",
+            "order": "12a",
+            "type": "radio",
+            "label": "Un plan de gestion (management plan) est-il en place et suivi ?",
+            "weight": 3,
+            "category": "Outils et Documentation",
+            "options": [
+                "Oui",
+                "Partiellement",
+                "Non"
+            ],
+            "scoringType": "direct",
+            "scoringWeights": [
+                2,
+                1,
+                0
+            ]
+        },
+        {
+            "id": "q13_gen",
+            "order": "13a",
+            "type": "radio",
+            "label": "La communication entre les équipes est-elle fluide ?",
+            "weight": 4,
+            "category": "Communication et Collaboration",
+            "options": [
+                "Oui",
+                "Partiellement",
+                "Non"
+            ],
+            "scoringType": "direct",
             "scoringWeights": [
                 2,
                 1,

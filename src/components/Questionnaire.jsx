@@ -29,12 +29,12 @@ const Questionnaire = () => {
         localStorage.setItem('auditAnswers', JSON.stringify(answers));
     }, [answers]);
 
-    const handleAnswerChange = (questionId, value, { score, weight }) => {
+    const handleAnswerChange = (questionId, value, { score, weight, category }) => {
         setAnswers((prev) => ({
             ...prev,
             [currentTheme.id]: {
                 ...prev[currentTheme.id],
-                [questionId]: { value, score, weight },
+                [questionId]: { value, score, weight, category },
             },
         }));
     };
